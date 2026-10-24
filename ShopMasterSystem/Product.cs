@@ -15,3 +15,4 @@ namespace ShopMasterSystem
         public int Stock { get; set; }
     }
 }
+//

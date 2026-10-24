@@ -117,6 +117,6 @@ Console.WriteLine("\n========================================");
                 Console.WriteLine($" {item.Name} - Category: {item.Category} | Price: ${item.Price} | Stock: {item.Stock}");
             }
         }
-        
+//        
      }
 }
