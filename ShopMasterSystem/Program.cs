@@ -104,6 +104,9 @@ namespace ShopMasterSystem
                 Console.WriteLine(item);
             }
             #endregion
+            #region Task 03 : Custom Report Generator :3.3. Filter Products 
+
+           
             // -------------------------------------------------------------
             // Scenario 5: Low-Stock Alert (Stock < 20)
             // -------------------------------------------------------------
@@ -115,6 +118,7 @@ namespace ShopMasterSystem
             {
                 Console.WriteLine($"[LOW STOCK] {item.Name}: only {item.Stock} left!");
             }
+            #endregion
 
         }
 
