@@ -6,6 +6,9 @@ namespace ShopMasterSystem
     {
         static void Main(string[] args)
         {
+            #region Task 01 : Smart Product Search
+
+
             List<Product> catalog = new List<Product>()
         {
             new Product { Id=1, Name="Laptop", Category="Electronics", Price=1200, Stock=10 },
@@ -58,13 +61,12 @@ namespace ShopMasterSystem
             Console.WriteLine("========================================");
             var cheapClothing = ProductService.SearchProducts(catalog, p => p.Category == "Clothing" && p.Price < 100);
             PrintProducts(cheapClothing);
-
-
+            #endregion
 
             // Scenario 1: Short Report (Name - $Price)
             Console.WriteLine("=== Short Report ===");
-            ProductService.PrintReport(catalog, p => Console.WriteLine($"{p.Name} - ${p.Price}")); 
-Console.WriteLine("\n========================================");
+            ProductService.PrintReport(catalog, p => Console.WriteLine($"{p.Name} - ${p.Price}"));
+            Console.WriteLine("\n========================================");
 
             // Scenario 2: Detailed Report ([Category] Name | Price: $X | Stock: Y)
             Console.WriteLine("=== Detailed Report ===");
@@ -117,6 +119,6 @@ Console.WriteLine("\n========================================");
                 Console.WriteLine($" {item.Name} - Category: {item.Category} | Price: ${item.Price} | Stock: {item.Stock}");
             }
         }
-//        
-     }
+        //        
+    }
 }
