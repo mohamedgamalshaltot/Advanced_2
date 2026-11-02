@@ -62,6 +62,10 @@ namespace ShopMasterSystem
             var cheapClothing = ProductService.SearchProducts(catalog, p => p.Category == "Clothing" && p.Price < 100);
             PrintProducts(cheapClothing);
             #endregion
+            #region Task 03 : Custom Report Generator :3.1  Print Reports 
+
+
+          
 
             // Scenario 1: Short Report (Name - $Price)
             Console.WriteLine("=== Short Report ===");
@@ -72,7 +76,7 @@ namespace ShopMasterSystem
             Console.WriteLine("=== Detailed Report ===");
             ProductService.PrintReport(catalog, p => Console.WriteLine($"[{p.Category}] {p.Name} | Price: ${p.Price} | Stock: {p.Stock}"));
 
-
+            #endregion
             // -------------------------------------------------------------
             // Scenario 3: Summary List (Name ($Price))
             // -------------------------------------------------------------
