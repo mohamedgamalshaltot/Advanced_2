@@ -77,6 +77,9 @@ namespace ShopMasterSystem
             ProductService.PrintReport(catalog, p => Console.WriteLine($"[{p.Category}] {p.Name} | Price: ${p.Price} | Stock: {p.Stock}"));
 
             #endregion
+            #region Task 03 : Custom Report Generator :3.2. Transform Products 
+
+         
             // -------------------------------------------------------------
             // Scenario 3: Summary List (Name ($Price))
             // -------------------------------------------------------------
@@ -100,7 +103,7 @@ namespace ShopMasterSystem
             {
                 Console.WriteLine(item);
             }
-
+            #endregion
             // -------------------------------------------------------------
             // Scenario 5: Low-Stock Alert (Stock < 20)
             // -------------------------------------------------------------
